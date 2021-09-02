@@ -1,0 +1,125 @@
+.header
+    padding: 32px 0 81px
+    @media (max-width: 876px)
+        padding: 32px 10px 81px
+    @media (max-width: $md3)
+        padding: 20px 10px 61px
+
+    &-action
+        display: flex
+        justify-content: space-between
+        margin-bottom: 35px
+        @media (max-width: $md3)
+            justify-content: flex-end
+
+        &__lang
+            display: flex
+            align-items: center
+            @media (max-width: $md3)
+                justify-content: center
+
+        &__item
+            margin: 0 10px
+            cursor: pointer
+            font-size: 15px
+            font-family: 'Bebas Neue', cursive
+            color: #000
+            text-transform: uppercase
+            text-decoration: underline
+            line-height: 12px
+            padding: 5px 4px
+            @include anime(0.3s, 0s)
+            &:first-child
+                margin-left: 0
+            &:last-child
+                margin-right: 0
+            &:hover
+                color: #fff
+                background: #000
+                text-decoration: none
+
+            &.active
+                color: #fff
+                background: #000
+                text-decoration: none
+
+        &__ordering
+            display: flex
+            a
+                font-size: 15px
+                color: #000
+                text-transform: uppercase
+                text-decoration: underline
+                line-height: 1.67
+                padding: 4px 5px
+                @include anime(0.3s, 0s)
+                &:hover
+                    color: #fff
+                    background: #000
+                    text-decoration: none
+
+    &__menu
+        position: relative
+
+    &__logo
+        height: 108px
+        width: 212px
+        position: absolute
+        background: url(../img/header/logo.png) center no-repeat
+        background-size: cover
+        left: 50%
+        top: 100px
+        transform: translate(-50%, -50%)
+        @media (max-width: $md3)
+            top: 70px
+
+.menu
+
+    &__icon
+
+    &__body
+        display: flex
+        justify-content: space-between
+        @media (max-width: $md3)
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            background-color: rgba(255, 255, 255, .95)
+            position: fixed
+            width: 100%
+            height: 100%
+            left: -100%
+            top: 0
+            z-index: 99
+            overflow: auto
+            margin: 0
+            padding: 25px 0 20px 0
+            @include anime(0.3s, 0s)
+            &.active
+                left: 0
+
+    &__list
+        display: flex
+        justify-content: space-between
+        @media (max-width: $md3)
+            display: inline-block
+        li
+            margin-right: 32px
+            &:last-child
+                margin-right: 0
+            @media (max-width: $md3)
+                margin-right: 0
+                margin-bottom: 25px
+
+    &__link
+        font-size: 18px
+        color: #000
+        text-transform: uppercase
+        line-height: 1.67
+        letter-spacing: 2px
+        &:hover
+            text-decoration: underline
+        @media (max-width: 876px)
+            font-size: 16px
+        @media (max-width: $md3)
+            font-size: 20px

@@ -1,0 +1,174 @@
+.footer
+    padding: 82px 0 55px
+    @media (max-width: $md3)
+        padding: 40px 0 25px
+    @media (max-width: $md4)
+        padding: 25px 0 15px
+
+    &__title
+        margin-bottom: 32px
+        @media (max-width: $md3)
+            margin-bottom: 25px
+            padding: 0 10px
+        @media (max-width: $md4)
+            margin-bottom: 15px
+
+    &__contacts
+        max-width: 630px
+        @media (max-width: $md3)
+            padding: 0 10px
+
+    &__row
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 15px
+        font-family: 'PT Sans', sans-serif
+        font-weight: bold
+        color: #000
+        line-height: 27px
+        margin-bottom: 23px
+        @media (max-width: 520px)
+            flex-direction: column
+            align-items: flex-start
+        @media (max-width: $md4)
+            margin-bottom: 15px
+
+    &__address
+        position: relative
+        padding-left: 30px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 50%
+            left: 0
+            transform: translate(0, -50%)
+            background: url(../img/footer/geo.png) no-repeat
+        @media (max-width: 520px)
+            margin-bottom: 10px
+
+    &__email
+        position: relative
+        padding-left: 36px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 65%
+            left: 0
+            transform: translate(0, -50%)
+            background: url(../img/footer/mail.png) no-repeat
+
+    &__phone
+        position: relative
+        padding-left: 30px
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 50%
+            left: 0
+            transform: translate(0, -50%)
+            background: url(../img/footer/tel.png) no-repeat
+        @media (max-width: 520px)
+            margin-bottom: 20px
+
+    &__social
+
+    &__icon
+        margin-left: 27px
+        &:first-child
+            margin-left: 0
+
+    &__middle
+        display: flex
+        justify-content: space-between
+        height: 476px
+        margin-bottom: 45px
+        @media (max-width: $md3)
+            margin-bottom: 25px
+            max-height: 430px
+
+    &__geo
+        display: flex
+        flex: 0 1 50%
+        @media (max-width: $md3)
+            display: none
+
+    &__form
+        display: flex
+        flex: 0 1 50%
+        flex-direction: column
+        background: #000
+        @media (max-width: $md3)
+            flex: 0 1 100%
+
+    &__copyright
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: $md3)
+            padding: 0 10px
+        @media (max-width: $md4)
+            flex-direction: column
+
+    &__text
+        font-size: 15px
+        font-family: 'PT Sans', sans-serif
+        color: #4d4d4d
+        line-height: 1.667
+        @media (max-width: $md4)
+            margin-bottom: 10px
+            text-align: center
+
+    &__logo
+
+.form
+    padding: 54px 0 50px 60px
+    @media (max-width: $md4)
+        padding: 34px 10px 30px
+    input
+        padding: 10px 0 9px 10px
+        max-width: 375px
+        border: 2px solid #959595
+        background: #252525
+        margin-bottom: 25px
+        font-size: 15px
+        font-family: 'PT Sans', sans-serif
+        color: #959595
+        line-height: 1.667
+    textarea
+        padding: 10px 0 0 10px
+        max-width: 375px
+        border: 2px solid #959595
+        background: #252525
+        margin-bottom: 25px
+        font-size: 15px
+        font-family: 'PT Sans', sans-serif
+        color: #959595
+        line-height: 1.667
+        height: 100px
+        resize: none
+        @media (max-width: $md4)
+            margin-bottom: 15px
+
+    &__title
+        font-size: 25px
+        font-family: "AkzidenzGroteskBQ"
+        color: #ffffff
+        text-transform: uppercase
+        line-height: 1
+        margin-bottom: 28px
+
+    &__name
+
+    &__contacts
+
+    &__message
+
+    &__get
+        padding: 18px 22px
