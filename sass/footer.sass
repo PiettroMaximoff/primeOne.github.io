@@ -52,6 +52,7 @@
     &__email
         position: relative
         padding-left: 36px
+        color: #000
         &::before
             content: ''
             position: absolute
@@ -65,6 +66,7 @@
     &__phone
         position: relative
         padding-left: 30px
+        color: #000
         &::before
             content: ''
             position: absolute
@@ -141,6 +143,9 @@
         font-family: 'PT Sans', sans-serif
         color: #959595
         line-height: 1.667
+        @include anime(0.2s, 0s)
+        &:focus
+            border: 2px solid #d6d6d6
     textarea
         padding: 10px 0 0 10px
         max-width: 375px
@@ -155,6 +160,9 @@
         resize: none
         @media (max-width: $md4)
             margin-bottom: 15px
+        @include anime(0.2s, 0s)
+        &:focus
+            border: 2px solid #d6d6d6
 
     &__title
         font-size: 25px

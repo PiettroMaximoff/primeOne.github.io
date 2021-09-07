@@ -1,0 +1,34 @@
+/* --- Burger --- */
+.icon-menu
+    @media (max-width: $md3)
+        display: block
+        position: absolute
+        top: -60px
+        left: 15px
+        width: 30px
+        height: 18px
+        cursor: pointer
+        z-index: 100
+        span
+            @include anime(0.2s, 0s)
+            top: 8px
+            left: 0
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: #000
+            &:first-child
+                top: 0
+            &:last-child
+                top: auto
+                bottom: 0
+        &.active
+            span
+                transform: scale(0)
+                background-color: #000
+                &:first-child
+                    transform: rotate(-45deg)
+                    top: 8px
+                &:last-child
+                    transform: rotate(45deg)
+                    bottom: 8px
