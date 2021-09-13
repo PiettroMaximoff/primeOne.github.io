@@ -15,6 +15,11 @@
 
     &__contacts
         max-width: 630px
+        font-size: 15px
+        font-family: 'PT Sans', sans-serif
+        font-weight: bold
+        color: #000
+        line-height: 27px
         @media (max-width: $md3)
             padding: 0 10px
 
@@ -22,15 +27,12 @@
         display: flex
         justify-content: space-between
         align-items: center
-        font-size: 15px
-        font-family: 'PT Sans', sans-serif
-        font-weight: bold
-        color: #000
-        line-height: 27px
         margin-bottom: 23px
         @media (max-width: 520px)
             flex-direction: column
             align-items: flex-start
+            &:first-child
+                margin-bottom: 10px
         @media (max-width: $md4)
             margin-bottom: 15px
 
@@ -40,28 +42,28 @@
         &::before
             content: ''
             position: absolute
-            width: 100%
-            height: 100%
+            width: 20px
+            height: 27px
             top: 50%
             left: 0
             transform: translate(0, -50%)
-            background: url(../img/footer/geo.png) no-repeat
+            background: url(../img/footer/geo.svg) no-repeat
         @media (max-width: 520px)
             margin-bottom: 10px
 
     &__email
         position: relative
-        padding-left: 36px
+        padding-left: 30px
         color: #000
         &::before
             content: ''
             position: absolute
-            width: 100%
-            height: 100%
-            top: 65%
+            width: 27px
+            height: 19px
+            top: 50%
             left: 0
             transform: translate(0, -50%)
-            background: url(../img/footer/mail.png) no-repeat
+            background: url(../img/footer/mail.svg) no-repeat
 
     &__phone
         position: relative
@@ -70,18 +72,20 @@
         &::before
             content: ''
             position: absolute
-            width: 100%
-            height: 100%
+            width: 19px
+            height: 25px
             top: 50%
             left: 0
             transform: translate(0, -50%)
-            background: url(../img/footer/tel.png) no-repeat
+            background: url(../img/footer/phone.svg) no-repeat
         @media (max-width: 520px)
             margin-bottom: 20px
 
     &__social
 
     &__icon
+        height: 24px
+        width: 24px
         margin-left: 27px
         &:first-child
             margin-left: 0
@@ -93,7 +97,6 @@
         margin-bottom: 45px
         @media (max-width: $md3)
             margin-bottom: 25px
-            max-height: 430px
 
     &__geo
         display: flex
