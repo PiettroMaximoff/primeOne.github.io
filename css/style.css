@@ -952,6 +952,8 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  background: transparent url("../img/footer/placeholder.jpg") center no-repeat;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .footer__geo {
